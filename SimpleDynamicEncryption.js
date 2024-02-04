@@ -25,3 +25,12 @@ class SimpleDynamicEncryption {
         return result;
     }
 }
+
+// Example usage:
+var input_string = "Mehdi-RaTo";
+var encoded_string = SimpleDynamicEncryption.Encode(input_string);
+var decoded_string = SimpleDynamicEncryption.Decode(encoded_string);
+
+console.log("Original: ", input_string);
+console.log("Encoded:  ", encoded_string);
+console.log("Decoded:  ", decoded_string);
