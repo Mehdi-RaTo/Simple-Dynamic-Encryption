@@ -1,4 +1,4 @@
-﻿Public Module SimpleDynamicEncryption
+﻿Module Program
     Public Function Encode(ByVal strInput As String) As String
         Dim rand As New Random()
         Dim rndInt As Integer = rand.Next(1, 10)
@@ -25,4 +25,15 @@
 
         Return result
     End Function
+
+    Sub Main()
+        ' Example usage
+        Dim input_string As String = "Mehdi-RaTo"
+        Dim encoded_string As String = Encode(input_string)
+        Dim decoded_string As String = Decode(encoded_string)
+
+        Console.WriteLine("Original: " + input_string)
+        Console.WriteLine("Encoded:  " + encoded_string)
+        Console.WriteLine("Decoded:  " + decoded_string)
+    End Sub
 End Module

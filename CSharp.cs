@@ -1,8 +1,8 @@
 ﻿using System;
 
-public static class SimpleDynamicEncryption
+class Program
 {
-    public static string Encode(string strInput)
+    static string Encode(string strInput)
     {
         Random rand = new Random();
         int rndInt = rand.Next(1, 10);
@@ -18,7 +18,7 @@ public static class SimpleDynamicEncryption
         return result;
     }
 
-    public static string Decode(string strInput)
+    static string Decode(string strInput)
     {
         int rndInt = strInput[strInput.Length - 1] - 33;
 
@@ -31,5 +31,17 @@ public static class SimpleDynamicEncryption
         }
 
         return result;
+    }
+
+    static void Main()
+    {
+        // Example usage:
+        string input_string = "Mehdi-RaTo";
+        string encoded_string = Encode(input_string);
+        string decoded_string = Decode(encoded_string);
+
+        Console.WriteLine("Original: " + input_string);
+        Console.WriteLine("Encoded:  " + encoded_string);
+        Console.WriteLine("Decoded:  " + decoded_string);
     }
 }
