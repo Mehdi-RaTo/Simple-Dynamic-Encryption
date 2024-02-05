@@ -1,7 +1,7 @@
 ## Simple Dynamic Encryption
 Use `Encode(strInput)` for Encrypt and `Decode(strInput)` for Decrypt.
 
-## Supported languages
+## Programming Languages
 - [x] C++
 - [x] C#
 - [x] Visual Basic
