@@ -1,24 +1,24 @@
 import random
 
 def Encode(strInput):
-    rand = random.randint(1, 9)
+    rndInt = random.randint(1, 9)
 
     result = ""
     for char in strInput:
-        result += chr(ord(char) + rand + 2)
+        result += chr(ord(char) + rndInt + 2)
 
-    result += chr(rand + 33)
+    result += chr(rndInt + 33)
 
     return result
 
 def Decode(strInput):
-    rand = ord(strInput[-1]) - 33
+    rndInt = ord(strInput[-1]) - 33
 
     strInput = strInput[:-1]
 
     result = ""
     for char in strInput:
-        result += chr(ord(char) - rand - 2)
+        result += chr(ord(char) - rndInt - 2)
 
     return result
 
