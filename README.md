@@ -8,3 +8,4 @@ Use `Encode(strInput)` for Encrypt and `Decode(strInput)` for Decrypt.
 - [x] JavaScript
 - [x] PHP
 - [x] Python
+- [x] Lua
